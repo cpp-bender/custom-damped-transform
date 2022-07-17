@@ -17,5 +17,15 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.left * dt * speed);
         }
+
+        else if(Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.forward * dt * speed);
+        }
+        
+        else if(Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector3.back * dt * speed);
+        }
     }
 }
